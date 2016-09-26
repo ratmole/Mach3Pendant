@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_hotkey"
+        >
+    <TextView
+            android:id="@+id/hotkey_label"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:duplicateParentState="true"
+            android:gravity="left|bottom"
+            android:paddingLeft="7dp"
+            android:paddingBottom="4dp"
+            android:text="label"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:typeface="sans"/>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/hotkey_label"
+            android:background="@drawable/tab_unselected_focused_holo"/>
+    />
+
+
+</RelativeLayout>

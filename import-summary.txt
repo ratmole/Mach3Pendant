@@ -1,0 +1,45 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* README.mdown
+* screenshots/
+* screenshots/Screenshot_2012-01-14-16-16-42.png
+* screenshots/Screenshot_2012-01-14-16-17-18.png
+* screenshots/Screenshot_2012-01-14-16-17-44.png
+* screenshots/Screenshot_2012-01-14-16-19-56.png
+* screenshots/banner.png
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets/
+* libs/FlurryAgent.jar => app/libs/FlurryAgent.jar
+* libs/bugsense-trace-1-1-2.jar => app/libs/bugsense-trace-1-1-2.jar
+* libs/kryonet-1.04-all.jar => app/libs/kryonet-1.04-all.jar
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp">
+    <TextView
+            android:id="@+id/lbl_enter_pin_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_pin_details"
+            style="@style/smallText"/>
+
+    <LinearLayout
+            android:layout_below="@id/lbl_enter_pin_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true">
+        <EditText
+                android:id="@+id/edt_pin_value"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:inputType="number"
+                />
+
+        <Button
+                android:id="@+id/btn_enter_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="25dp"
+                android:text="@string/enter_pin"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

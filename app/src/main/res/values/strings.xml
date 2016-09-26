@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mach3Pendant</string>
+    <string name="toast_os_not_supported">Sorry, your PC\'s OS (%1$s) doesn\'t supported now</string>
+    <string name="connection_tips">
+        Please Wait for few seconds and Mach3Pendant will get access to your computer automatically.\n\n
+        If you still see this message after 10 seconds passed than you need to make a simple set up on your
+        computer:\n\n
+        1. Download and install Mach3PendantServer application from the following website <b>pilgr.com</b>\n\n
+        2. Connect this device and the computer running Mach3 to the same Wi-Fi network.
+        \n\n
+        3. Restart piHotKeys and wait until it connects your computer automatically.
+    </string>
+    <string name="auto_connecting">Connecting...</string>
+
+    <!--Actually it's a spent time-->
+    <string name="version">1.01</string>
+    <string name="aboutMenu">About</string>
+    <string name="about">raTMole</string>
+
+
+
+    <string name="enter_pin">Enter PIN</string>
+    <string name="toast_incorrect_pin">Incorrect pin. Please try enter PIN again</string>
+
+    <string name="enter_pin_details">Pin code has been shown on your computer in a popup message near the clock. Enter
+        it below to login. The code shows a few seconds. If you do not see, simply press the button bellow
+    </string>
+</resources>
