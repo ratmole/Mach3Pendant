@@ -53,7 +53,7 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
      */
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        Log.d("Creating PiCat activity...");
+        Log.d("Creating Mach3Pendant activity...");
         super.onCreate(savedInstanceState);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -124,7 +124,7 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
     @Override
     public void onStart() {
         super.onStart();
-        Log.d("PiCat activity has been started");
+        Log.d("Mach3Pendant activity has been started");
     }
 
     @Override
@@ -144,13 +144,13 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
         super.onStop();
 
 
-        Log.d("PiCat activity has been stopped");
+        Log.d("Mach3Pendant activity has been stopped");
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d("Finishing PiCat activity...");
+        Log.d("Finishing Mach3Pendant activity...");
     }
 
     @Override
