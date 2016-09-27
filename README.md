@@ -22,6 +22,7 @@ https://github.com/ratmole/Mach3PendantServer/raw/master/WinPrecompiled/Mach3Pen
 6. Controll your Mach3 CNC Software...
 
 
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JG8MF9QZV5EN4)
 
 Many thanks to https://github.com/pilgr for the initial code...
 
