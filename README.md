@@ -8,6 +8,10 @@ Use this Application in your android device
 and the Server .jar file: https://github.com/ratmole/Mach3PendantServer/raw/master/WinPrecompiled/Mach3PendantServer.jar
 on the computer running Mach3 and you will be able to control your Mach3 Software from your android device
 
+<p align="left">
+  <img src="https://github.com/ratmole/Mach3Pendant/raw/master/img/Mach3Pendant.png" width="250"/>
+</p>
+
 #Usage:
 1. Download the precompiled .jar file ,on the computer running Mach3, from here:
 https://github.com/ratmole/Mach3PendantServer/raw/master/WinPrecompiled/Mach3PendantServer.jar
