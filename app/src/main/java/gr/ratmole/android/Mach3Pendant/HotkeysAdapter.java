@@ -12,13 +12,6 @@ import android.widget.TextView;
 import gr.ratmole.android.Mach3Pendant.model.Application;
 import gr.ratmole.android.Mach3Pendant.model.Key;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 09.06.11
- * Time: 21:02
- * To change this template use File | Settings | File Templates.
- */
 public class HotkeysAdapter extends BaseAdapter {
     Application app;
 

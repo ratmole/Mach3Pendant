@@ -6,10 +6,10 @@
         Please Wait for few seconds and Mach3Pendant will get access to your computer automatically.\n\n
         If you still see this message after 10 seconds passed than you need to make a simple set up on your
         computer:\n\n
-        1. Download and install Mach3PendantServer application from the following website <b>pilgr.com</b>\n\n
+        1. Download and install Mach3PendantServer application from the following website \n<b>https://github.com/ratmole/Mach3PendantServer</b>\n\n
         2. Connect this device and the computer running Mach3 to the same Wi-Fi network.
         \n\n
-        3. Restart piHotKeys and wait until it connects your computer automatically.
+        3. Restart Mach3Pendant and wait until it connects your computer automatically.
     </string>
     <string name="auto_connecting">Connecting...</string>
 

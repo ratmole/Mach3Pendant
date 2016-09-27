@@ -3,7 +3,7 @@ package gr.ratmole.android.Mach3Pendant.utils;
 import android.text.TextUtils;
 
 public final class Log {
-    private final static String TAG = "piHotKeys";
+    private final static String TAG = "Mach3Pendant";
 
 
     public static void v(String msg) {

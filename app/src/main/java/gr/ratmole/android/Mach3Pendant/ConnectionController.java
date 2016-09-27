@@ -27,7 +27,7 @@ public class ConnectionController extends Fragment {
         connManager.activate();
 
         connManager.setOnConnectionChangeListener(new ConnectivityManager.OnConnectionChangeListener() {
-            public void onConnect(String osName_, String osVersion_, String userName_, boolean approvedByUser_, int piServerVersion_) {
+            public void onConnect(String osName_, String osVersion_, String userName_, boolean approvedByUser_, int Mach3PendantServerVersion_) {
                 onConnected();
             }
 

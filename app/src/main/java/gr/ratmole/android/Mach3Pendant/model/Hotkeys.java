@@ -16,19 +16,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 09.06.11
- * Time: 17:58
- * To change this template use File | Settings | File Templates.
- */
 public class Hotkeys {
     private List<Application> apps = new ArrayList<Application>();
     private boolean initialized = false;
     private Application activeApp = null;
     public HashMap<String, Key> oskeys = new HashMap<String, Key>();
-    public HashMap<String, Command> oscommands = new HashMap<String, Command>();
     private Context context;
     private static final String PATH_TO_FILE = "/Android/data/gr.ratmole.android.Mach3Pendant";
     private static final String FILE_NAME = "hotkeys.xml";
@@ -52,7 +44,6 @@ public class Hotkeys {
             parser.parse(currentStream, handler);
             apps = handler.getApps();
             oskeys = handler.getOsKeys();
-            oscommands = handler.getOsCommands();
             initialized = true;
         } catch (FileNotFoundException e) {
             Log.e("File not found", e);

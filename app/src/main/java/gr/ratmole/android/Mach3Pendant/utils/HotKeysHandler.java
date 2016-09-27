@@ -1,7 +1,6 @@
 package gr.ratmole.android.Mach3Pendant.utils;
 
 import gr.ratmole.android.Mach3Pendant.model.Application;
-import gr.ratmole.android.Mach3Pendant.model.Command;
 import gr.ratmole.android.Mach3Pendant.model.Key;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
@@ -11,16 +10,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by Roman Shemshei
- * Date: 29.02.12
- * Time: 18:06
- */
+
 public class HotKeysHandler extends DefaultHandler {
 
     private List<Application> apps = new ArrayList<Application>();
     private HashMap<String, Key> osKeys = new HashMap<String, Key>();
-    private HashMap<String, Command> osCommands = new HashMap<String, Command>();
     private Application app = null;
 
     @Override
@@ -85,7 +79,4 @@ public class HotKeysHandler extends DefaultHandler {
         return osKeys;
     }
 
-    public HashMap<String, Command> getOsCommands() {
-        return osCommands;
-    }
 }

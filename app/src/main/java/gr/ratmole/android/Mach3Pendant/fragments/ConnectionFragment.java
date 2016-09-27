@@ -8,13 +8,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import gr.ratmole.android.Mach3Pendant.R;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 22.07.11
- * Time: 22:55
- * To change this template use File | Settings | File Templates.
- */
 public class ConnectionFragment extends Fragment {
     private TextView lblHelp;
 

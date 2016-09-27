@@ -22,15 +22,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import gr.ratmole.android.Mach3Pendant.actionbar.ActionBarHelper;
 
-/**
- * A base activity that defers common functionality across app activities to an {@link
- * gr.ratmole.android.Mach3Pendant.actionbar.ActionBarHelper}.
- * <p/>
- * NOTE: dynamically marking menu items as invisible/visible is not currently supported.
- * <p/>
- * NOTE: this may used with the Android Compatibility Package by extending
- * android.support.v4.app.FragmentActivity instead of {@link android.app.Activity}.
- */
 public abstract class ActionBarActivity extends FragmentActivity {
     final ActionBarHelper mActionBarHelper = ActionBarHelper.createInstance(this);
 

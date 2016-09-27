@@ -1,12 +1,6 @@
 package gr.ratmole.android.Mach3Pendant.shared;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 05.08.11
- * Time: 22:55
- * To change this template use File | Settings | File Templates.
- */
+
 public class Handshake {
     public static final int PC_IM_READY = 1;
     public static final int PHONE_TRUST_ME = 2;

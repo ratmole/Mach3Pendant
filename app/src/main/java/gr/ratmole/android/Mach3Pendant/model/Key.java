@@ -6,13 +6,7 @@ import gr.ratmole.android.Mach3Pendant.utils.Log;
 import java.util.List;
 import java.util.StringTokenizer;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 09.06.11
- * Time: 21:20
- * To change this template use File | Settings | File Templates.
- */
+
 public class Key {
     public String id = "";
     public String shortcut = "";
@@ -51,7 +45,7 @@ public class Key {
                     sequence = null;
                     return null;
                 }
-                Log.e("ShortCut: "+ keyCode + " 0x"+Integer.toHexString(keyCode));
+               // Log.e("ShortCut: "+ keyCode + " 0x"+Integer.toHexString(keyCode));
 
                 //Skip if only release will be needed
                 if (!tokenWithStates.endsWith("$")) {
@@ -95,8 +89,5 @@ public class Key {
             return -1;
         }
     }
-    public int getkeyCode() {
-        return keyCode;
 
-    }
 }

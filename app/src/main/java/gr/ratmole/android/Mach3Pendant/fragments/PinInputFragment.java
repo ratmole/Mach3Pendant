@@ -14,13 +14,6 @@ import gr.ratmole.android.Mach3Pendant.ConnectivityManager;
 import gr.ratmole.android.Mach3Pendant.Mach3PendantApplication;
 import gr.ratmole.android.Mach3Pendant.R;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 09.08.11
- * Time: 22:55
- * To change this template use File | Settings | File Templates.
- */
 public class PinInputFragment extends Fragment {
     private ConnectivityManager connectivityManager;
     private Button btnEnterPin;

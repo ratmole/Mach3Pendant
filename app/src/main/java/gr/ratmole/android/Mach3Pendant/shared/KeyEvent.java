@@ -13,7 +13,6 @@ public class KeyEvent extends Event{
         code = code_;
     }
 
-
     public KeyEvent(){
 
     }

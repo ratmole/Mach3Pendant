@@ -17,7 +17,6 @@ public class Network {
         kryo.register(String[].class);
         kryo.register(SomeRequest.class);
         kryo.register(SomeResponse.class);
-
         kryo.register(KeyEvent.class);
         kryo.register(EventSequence.class);
         kryo.register(DelayEvent.class);
@@ -26,7 +25,6 @@ public class Network {
         kryo.register(MouseEvent.class);
         kryo.register(MouseEvent.Type.class);
         kryo.register(ExecutableCommand.class);
-
         kryo.register(ServerGreeting.class);
         kryo.register(ServerWindow.class);
         kryo.register(Handshake.class);

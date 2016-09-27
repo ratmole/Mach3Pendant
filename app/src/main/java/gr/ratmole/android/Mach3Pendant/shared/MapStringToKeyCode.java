@@ -4,13 +4,7 @@ import java.util.HashMap;
 
 import static gr.ratmole.android.Mach3Pendant.shared.KeyEvent.*;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 09.06.11
- * Time: 18:16
- * To change this template use File | Settings | File Templates.
- */
+
 public final class MapStringToKeyCode {
     public static final HashMap<String, Integer> map = new HashMap<String, Integer>();
 

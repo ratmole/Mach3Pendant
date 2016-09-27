@@ -28,13 +28,7 @@ import gr.ratmole.android.Mach3Pendant.shared.EventSequence;
 import gr.ratmole.android.Mach3Pendant.shared.KeyEvent;
 import gr.ratmole.android.Mach3Pendant.utils.Log;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 22.07.11
- * Time: 22:10
- * To change this template use File | Settings | File Templates.
- */
+
 public class GridFragment extends Fragment {
     private Hotkeys hotkeys;
     private GridView grid;
@@ -71,12 +65,9 @@ public class GridFragment extends Fragment {
         grid.setAdapter(hotkeysAdapter);
         hotkeysAdapter.setApplication(hotkeys.getActiveApp());
 
-
         grid.setOnTouchListener(new View.OnTouchListener() {
 
             public boolean onTouch(View v, MotionEvent me) {
-
-
 
                 int action = me.getActionMasked();
 
@@ -109,7 +100,6 @@ public class GridFragment extends Fragment {
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
-                            //Log.e("x0");
                             return false;
                         }
                         else if (key.shortcut.equalsIgnoreCase("Ctrl+Y+0")){
@@ -132,7 +122,6 @@ public class GridFragment extends Fragment {
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
-                            Log.e("y0");
                             return false;
                         }
                         else if (key.shortcut.equalsIgnoreCase("Ctrl+Z+0")){
@@ -155,7 +144,6 @@ public class GridFragment extends Fragment {
                             } catch (InterruptedException e) {
                                 e.printStackTrace();
                             }
-                            //Log.e("z0");
                             return false;
                         }
                         else {
@@ -164,7 +152,6 @@ public class GridFragment extends Fragment {
                                     KeyEvent keyEvent = (KeyEvent) event;
                                     if (keyEvent.press) {
                                         _connManager.sendMessage(new EventSequence().press(keyEvent.code));
-                                        //Log.e("Press: " + keyEvent.code);
                                     }
                                 }
                             }
@@ -184,20 +171,15 @@ public class GridFragment extends Fragment {
                                 KeyEvent keyEvent = (KeyEvent) event;
                                 if (keyEvent.press) {
                                     _connManager.sendMessage(new EventSequence().release(keyEvent.code));
-                                    //Log.e("Release: " +keyEvent.code);
-
                                 }
                             }
                         }
                     }
-
                 }
                 return false;
             }
 
         });
-
-
 
         gridAnimation = AnimationUtils.loadLayoutAnimation(getActivity(), R.anim.layout_grid_inverse_fade);
         grid.setLayoutAnimation(gridAnimation);
@@ -207,10 +189,5 @@ public class GridFragment extends Fragment {
     public void setActiveApp(Application activeApp) {
         hotkeysAdapter.setApplication(activeApp);
 
-        //grid can be null while fragment creating?
-        //[10.01.12 Comment to disable animation]
-        /*if (grid != null) {
-            grid.startLayoutAnimation();
-        }*/
     }
 }

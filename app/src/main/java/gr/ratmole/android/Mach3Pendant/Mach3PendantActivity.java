@@ -19,9 +19,6 @@ import gr.ratmole.android.Mach3Pendant.model.Application;
 import gr.ratmole.android.Mach3Pendant.model.Hotkeys;
 import gr.ratmole.android.Mach3Pendant.utils.Log;
 
-
-//TODO Показывать рефреш-иконку при старте 4-ки
-//TODO Поправить все менюшки
 public class Mach3PendantActivity extends ActionBarActivity implements OnConnectionActionPerformedListener {
 
     private FragmentManager fragmentManager = getSupportFragmentManager();
@@ -94,8 +91,6 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        //TODO Показывать индикатор поиска сервера
-        //getActionBarHelper().setRefreshActionItemState(isWaitResponse());
     }
 
     @Override
@@ -153,10 +148,10 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
         Log.d("Finishing Mach3Pendant activity...");
     }
 
-    @Override
+    /*@Override
     public boolean dispatchTouchEvent(MotionEvent event_) {
-        return touchController.onTouch(event_) || super.dispatchTouchEvent(event_);
-    }
+        //return touchController.onTouch(event_) || super.dispatchTouchEvent(event_);
+    }*/
 
     private void setOnWindowChangeListeners() {
         connManager.setOnChangeWindowListener(new ConnectivityManager.OnChangeWindowListener() {
@@ -195,7 +190,6 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
         }
     }
 
-    //TODO Сделать нормальную установку фрагмента для неподдерживаемых приложений. Просто за счет null сейчас показывается пустой фрагмент
     private void setBlankFragmentInsteadOfActiveApp() {
         if (gridFragment != null) gridFragment.setActiveApp(null);
     }

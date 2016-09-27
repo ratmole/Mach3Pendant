@@ -70,7 +70,6 @@ public class ConnectivityManager {
         Log.d("deactivate");
     }
 
-    //TODO Отправлять из очереди
     public void sendMessage(final Object msg) {
         if (isConnected() && msg != null) {
             new Thread() {
@@ -228,7 +227,6 @@ public class ConnectivityManager {
                 InetAddress address = udpClient.discoverHost(Network.UDP_PORT, 5000);
                 Log.d("Discovered server address:" + address);
 
-
                 /**
                  * Server discovered via WiFi? Try to use it.
                  */
@@ -252,7 +250,7 @@ public class ConnectivityManager {
     }
 
     interface OnConnectionChangeListener {
-        void onConnect(String osName_, String osVersion_, String userName_, boolean approvedByUser_, int piServerVersion);
+        void onConnect(String osName_, String osVersion_, String userName_, boolean approvedByUser_, int Mach3PendantServerVersion);
 
         void onEnterPin();
 

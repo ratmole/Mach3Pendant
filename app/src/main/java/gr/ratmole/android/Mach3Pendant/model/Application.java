@@ -4,13 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/**
- * Created by IntelliJ IDEA.
- * User: pilgr
- * Date: 09.06.11
- * Time: 21:19
- * To change this template use File | Settings | File Templates.
- */
 public class Application {
     public String name = "";
     public String id = "";
