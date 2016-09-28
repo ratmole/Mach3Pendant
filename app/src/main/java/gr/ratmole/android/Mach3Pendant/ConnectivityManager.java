@@ -55,6 +55,8 @@ public class ConnectivityManager {
       tcpClient.addListener(handshakeListener);
     }
 
+
+
     public void activate() {
         tcpClient.start();
         udpClient.start();

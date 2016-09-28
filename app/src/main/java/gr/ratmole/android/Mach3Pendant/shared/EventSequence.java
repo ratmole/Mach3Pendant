@@ -30,18 +30,9 @@ public class EventSequence {
         return this;
     }
 
-
-    public EventSequence wheel(int wheelAmt_) {
-        sequence.add(new MouseEvent(wheelAmt_));
-        return this;
-    }
-
     public List<Event> getSequence() {
         return sequence;
     }
 
-    public Event getSequenceByPossition(int possition) {
-        return  sequence.get(possition);
 
-    }
 }

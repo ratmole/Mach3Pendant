@@ -37,6 +37,7 @@ public class GridFragment extends Fragment {
     private HotkeysAdapter hotkeysAdapter;
     private ConnectivityManager _connManager;
     private LayoutAnimationController gridAnimation;
+    private Key Latestkeys = null;
 
 
     @Override
@@ -69,13 +70,15 @@ public class GridFragment extends Fragment {
 
             public boolean onTouch(View v, MotionEvent me) {
 
+                float currentXPosition = me.getX();
+                float currentYPosition = me.getY();
+                int position = grid.pointToPosition((int) currentXPosition, (int) currentYPosition);
+                Key key = hotkeysAdapter.getItem(position);
+
                 int action = me.getActionMasked();
 
                 if (action == MotionEvent.ACTION_DOWN) {
-                    float currentXPosition = me.getX();
-                    float currentYPosition = me.getY();
-                    int position = grid.pointToPosition((int) currentXPosition, (int) currentYPosition);
-                    Key key = hotkeysAdapter.getItem(position);
+                    Latestkeys = key;
 
                     if (key != null) {
                         EventSequence msg  = key.getEventSequence();
@@ -159,11 +162,9 @@ public class GridFragment extends Fragment {
                     }
 
                 } else if (action == MotionEvent.ACTION_UP) {
-                    float currentXPosition = me.getX();
-                    float currentYPosition = me.getY();
-                    int position = grid.pointToPosition((int) currentXPosition, (int) currentYPosition);
-                    Key key = hotkeysAdapter.getItem(position);
-
+                    if (Latestkeys != null){
+                        key = Latestkeys;
+                    }
                     if (key != null) {
                         EventSequence msg  = key.getEventSequence();
                         for (Event event : msg.getSequence()) {
@@ -174,6 +175,7 @@ public class GridFragment extends Fragment {
                                 }
                             }
                         }
+                        Latestkeys = null;
                     }
                 }
                 return false;

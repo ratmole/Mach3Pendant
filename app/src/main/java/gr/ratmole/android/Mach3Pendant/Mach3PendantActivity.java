@@ -126,19 +126,21 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
     protected void onResume() {
         super.onResume();
         wakeLock.acquire();
+        Log.d("Mach3Pendant activity has been resumed");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
         wakeLock.release();
+        Log.d("Mach3Pendant activity has been paused");
+        this.finish();
+        return;
     }
 
     @Override
     public void onStop() {
         super.onStop();
-
-
         Log.d("Mach3Pendant activity has been stopped");
     }
 
@@ -148,10 +150,6 @@ public class Mach3PendantActivity extends ActionBarActivity implements OnConnect
         Log.d("Finishing Mach3Pendant activity...");
     }
 
-    /*@Override
-    public boolean dispatchTouchEvent(MotionEvent event_) {
-        //return touchController.onTouch(event_) || super.dispatchTouchEvent(event_);
-    }*/
 
     private void setOnWindowChangeListeners() {
         connManager.setOnChangeWindowListener(new ConnectivityManager.OnChangeWindowListener() {
