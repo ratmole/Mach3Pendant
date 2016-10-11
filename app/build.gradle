@@ -24,6 +24,6 @@ android {
 }
 
 dependencies {
-    compile files('libs/kryonet-1.04-all.jar')
+    compile 'com.esotericsoftware:kryonet:2.22.0-RC1'
     compile 'com.android.support:support-v4:23.0.1'
 }
